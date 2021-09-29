@@ -10,6 +10,7 @@
     "sourceMap": true,
     "baseUrl": "./",
     "strict": true,
+    "outDir": ".",
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]

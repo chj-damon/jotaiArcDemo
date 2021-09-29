@@ -1,5 +1,5 @@
 module.exports = {
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   preset: 'ts-jest',
   clearMocks: true,
   coverageDirectory: 'coverage',
