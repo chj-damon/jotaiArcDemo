@@ -9,5 +9,6 @@ export default defineConfig({
     { path: '/demo1', component: '@/pages/demo1' },
     { path: '/demo2', component: '@/pages/demo2' },
   ],
+  extraBabelPlugins: ["jotai/babel/plugin-debug-label"],
   fastRefresh: {},
 });
