@@ -1,11 +1,14 @@
-import Demo1 from './Demo1';
+import { Link } from 'umi';
 
 export default function IndexPage() {
   return (
     <div>
-      <Demo1 />
-      {/* <Demo2 /> */}
-      {/* <Demo3 />       */}
+      <p>
+        <Link to="/demo1">去示例1</Link>
+      </p>
+      <p>
+        <Link to="/demo2">去示例2</Link>
+      </p>
     </div>
   );
 }

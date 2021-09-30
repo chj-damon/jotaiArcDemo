@@ -1,15 +1,15 @@
-import React from 'react'
-import { fireEvent, render, screen } from '@testing-library/react'
-import { Counter } from './Counter'
+import React from 'react';
+import { fireEvent, render, screen } from '@testing-library/react';
+import { Counter } from './Counter';
 
 test('should increment counter', () => {
   // Arrange
-  render(<Counter />)
+  render(<Counter />);
 
-  const counter = screen.getByText('0')
-  const incrementButton = screen.getByText('one up')
+  const counter = screen.getByText('0');
+  const incrementButton = screen.getByText('one up');
   // Act
-  fireEvent.click(incrementButton)
+  fireEvent.click(incrementButton);
   // Assert
-  expect(counter.textContent).toEqual('1')
-})
+  expect(counter.textContent).toEqual('1');
+});
