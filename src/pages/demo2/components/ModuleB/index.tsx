@@ -11,7 +11,7 @@ export default function ModuleB() {
       <SubTreeB />
       <TodoList />
       {/* 引入Counter组件，因为Counter组件里面用的是moduleA scope里的atom，在moduleB里面没有初始化，所以这里会直接报错 */}
-      <Counter />
+      {/* <Counter /> */}
     </ModuleProvider>
   );
 }
@@ -40,7 +40,7 @@ function TodoList() {
       </ul>
       <Button onClick={() => {
         const newTodoList = todos.concat([{ name: `zhangsan${Math.random().toFixed(5)}` }]);
-        setTodos(newTodoList);
+        setTodos(() => newTodoList);
       }}>添加TODO</Button>
     </div>
   );
